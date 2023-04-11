@@ -1,0 +1,52 @@
+
+# $Id: knowledge.kfb 1053a76196fb 2008-08-10 mtnyogi $
+
+#
+# Copyright © 2007-2008 Bruce Frederiksen
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+
+
+#disease_of_xsym(disease,sym1,sym2,...,symx)
+
+disease_of_3sym('Epidermolysis bullosa acquisita','Cloques anormales de la peau','Anomalie des cheveux','Milia')
+disease_of_5sym('Scl\u00e9rodermie localis\u00e9e','Peau \u00e9paissie','Arthralgie','Plaque scl\u00e9rotique cutan\u00e9e','L\u00e9sion cutan\u00e9e localis\u00e9e','Peau raide')
+disease_of_6sym('Syndrome de Peutz Jeghers','Pigmentation anormale de la muqueuse buccale','Anomalie du tractus gastro-intestinal','Carcinome gastro-intestinal','Tache','Taches de rousseur multiples','Hemorragie gastro-intestinale')
+disease_of_6sym('Dermatoleucodystrophie','Anomalie de la morphologie du syst\u00E8me nerveux','Hyperk\u00e9ratose','D\u00e9ficience intellectuelle','Peau \u00e9paissie','Hyperr\u00e9flexie','R\u00e9flexes tendineux r\u00e9duits') 
+disease_of_6sym('Parana hard skin syndrome','Hyperpigmentation g\u00e9n\u00e9ralis\u00e9e','Retard de croissance','Mouvement thoracique restreint','Peau \u00e9paissie','Insuffisance respiratoire','Doigt effil\u00e9')
+disease_of_7sym('Folliculite diss\u00e9quante du cuir chevelu','Anomalie des cheveux','Cellulite','\u0152d\u00E8me','Prurit','Infections cutan\u00e9es r\u00e9currentes','Sensibilit\u00e9 du cuir chevelu','Nodule sous cutan\u00e9')
+disease_of_8sym('Acro k\u00e9rato \u00e9lasto\u00EFdose de Costa','Acanthose \u00e9pidermique','Fibres \u00e9lastiques fragment\u00e9es dans le derme','Papule hyperk\u00e9ratosique','Hyperk\u00e9ratose palmoplantaire','Granulomatose','Hypergranulose','Orthok\u00e9ratose','Papule jaune')
+disease_of_9sym('Ichtyose acquise','Peau s\u00E8che','Ichtyose','Prurit','\u00e9ryth\u00E8me','Hyperk\u00e9ratose','Hypersensibilit\u00e9 immunologique','K\u00e9ratodermie palmoplantaire','Papule','Infections cutan\u00e9es r\u00e9currentes')
+disease_of_10sym('Syndrome de Melkersson Rosenthal','Ch\u00e9ilite','Paralysie du nerf cr\u00E2nien','\u0152d\u00E8me','Anomalie inflammatoire de la peau','Faci\u00E8s immobile','Oligosaccharidurie','\u0152d\u00E8me p\u00e9riorbitaire','Paralysie faciale','langue fissur\u00e9e','Macroglossie')  
+disease_of_11sym('Syndrome pseudoxanthome \u00e9lastique like avec r\u00e9tinite pigmentaire','Cutis Laxa','Nyctalopie','Dystrophie du c\u00F4ne en b\u00E2tonnets','Anomalie du nerf optique','Absence d\u00e9pith\u00e9lium pigmentaire r\u00e9tinien','Att\u00e9nuation des vaisseaux sanguins r\u00e9tiniens','Augmentation du nombre de plis cutan\u00e9s','Papule','Peau redondante','Strabisme','Morphologie anormale du fond d\'\u0153il')
+disease_of_13sym('Fibrodysplasie ossifiante progressive','Morphologie vert\u00e9brale anormale','Anomalie du premier os m\u00e9tatarsien','Ossification ectopique dans le tissu ligamentaire','Ossification ectopique dans le tissu musculaire','Limitation de la mobilit\u00e9 articulaire','Hallux court','Rigidit\u00e9 vert\u00e9brale','Nodule sous cutan\u00e9','Alop\u00e9cie','Aplasie Hypoplasie des phalanges de l\'hallux','Clinodactylie du 5\u00E8me doigt','D\u00e9ficience auditive','Insuffisance respiratoire')
+disease_of_14sym('Syndrome de Hallermann Streiff','Anomalie de la dentition','Alopecie','Brachyc\u00e9phalie','Cr\u00EAte nasale convexe','Atrophie cutanee','Cataracte developpementale','Bossage frontal','Hypotrichose','Microphtalmie','Petite taille proportionnelle','R\u00e9duction de la densit\u00e9 min\u00e9rale osseuse','Exostoses costales','C\u00F4tes courtes','Poils clairsem\u00e9s')
+disease_of_15sym('Syndrome de Werner','Verticille de poils anormaux','Anomalie du thorax','Anomalie de la voix','Cataracte','Pont nasal convexe','Hypogonadisme','Lipoatrophie','Ost\u00e9oporose','Pili torti','Grisissement pr\u00e9matur\u00e9 des cheveux','Apparence vieillie pr\u00e9matur\u00e9ment','Petite taille','mince','Cheveux clairsem\u00e9s du cuir chevelu','Canitie')
+disease_of_16sym('Po\u00EFkilodermie acrok\u00e9ratosique cong\u00e9nitale','Cloques anormales de la peau','Ongles dystrophiques','Ongle dystrophique','Ecz\u00e9ma','\u00C9ryth\u00E8me','Gingivite','Patchs cutan\u00e9s hypopigment\u00e9s','Ichtyose','Hyperpigmentation irr\u00e9guli\u00E8re','Dystrophie des ongles','Papule','Perte pr\u00e9matur\u00e9e des dents primaires','Pustule','T\u00e9langiectasie de la peau','Peau fine','Urticaire')
+disease_of_18sym('Complexe de Carney','Maladie corticosurrenalienne micronodulaire pigment\u00e9e','Naevus atypiques dans les zones non exposees au soleil','Naevus bleu','Myxome cardiaque','Myxome cutane','Goitre multinodulaire euthyro\u00EFdien','Tumeur gonadique','Exc\u00E8s dhormone de croissance','Augmentation du taux de cortisol circulant','Augmentation de la concentration de prolactine circulante','Augmentation du facteur de croissance serique analogue \u00E0 linsuline','Multiple cafe au lait spots','Taches de rousseur multiples','Kyste de lovaire','Adenome hypophysaire des cellules de lhormone de croissance','Tumeur \u00E0 cellules de Sertoli','Hyperpigmentation tachetee','Tumeur testiculaire')
+disease_of_19sym('Costello syndrome','Morphologie anormale des ongles','Anomalie de la peau','Acanthosis Nigricans','Koilonychie','Ongles profonds','Maturation squelettique retard\u00e9e','Pont nasal d\u00e9prim\u00e9','Incapacit\u00e9 \u00E0 prosp\u00e9rer dans la petite enfance','Difficult\u00e9s dalimentation dans la petite enfance','Hyperk\u00e9ratose','Manque d\u00e9lasticit\u00e9 de la peau','Macroc\u00e9phalie','Palais \u00e9troit','St\u00e9nose pulmonaire','Peau redondante','Cou court','Petite taille','D\u00e9faut septal ventriculaire','Cheveux laineux')
+disease_of_21sym('Complexe Xeroderma pigmentosum syndrome de Cockayne','Anomalie du m\u00e9tabolisme des acides amin\u00e9s','Art\u00e9rioscl\u00e9rose','Ataxie','Cachexie','Photosensibilit\u00e9 cutan\u00e9e','Dermalatrophie','Peau s\u00E8che','D\u00e9ficience auditive','Hydroc\u00e9phalie','D\u00e9ficience intellectuelle','Microc\u00e9phalie','Nombreuses taches de rousseur pigment\u00e9es','Nystagmus','Atrophie optique','Peau panach\u00e9e','Apparence vieillie pr\u00e9matur\u00e9ment','R\u00e9tinopathie','Petite taille','D\u00e9mangeaison de la peau','Spasticit\u00e9','Urticaire')
+disease_of_27sym('Syndrome prog\u00e9ro\u00EFde cardio cutan\u00e9 li\u00e9 \u00E0 LMNA','Anomalie des voies biliaires intrah\u00e9patiques','Anomalie de lart\u00E8re pulmonaire','Sourcil absent','Cils absents','Alop\u00e9cie universelle','Ath\u00e9roscl\u00e9rose aortique','An\u00e9vrisme de la racine aortique','St\u00e9nose valvulaire aortique','Carcinome basocellulaire','Insuffisance cardiaque congestive','Ath\u00e9roscl\u00e9rose coronarienne','Emphys\u00E8me','Hypercholest\u00e9rol\u00e9mie','Hypertension','Hypertriglyc\u00e9rid\u00e9mie','H\u00e9morragie intracr\u00E2nienne','Lipoatrophie','R\u00e9gurgitation mitrale','Calcification de la valve mitrale','Carcinome r\u00e9nal papillaire','Grisissement pr\u00e9matur\u00e9 des cheveux','Rides pr\u00e9matur\u00e9es de la peau','Tumeur carcino\u00EFde pulmonaire','Scl\u00e9rodermie','Cheveux clairsem\u00e9s','Carcinome \u00e9pidermo\u00EFde de la peau','Hypertrophie ventriculaire')
+
+ 
+
+
+
+
+

@@ -1,0 +1,361 @@
+# $Id: fc_example.krb 2bb500de1268 2008-09-24 mtnyogi $
+# 
+# Copyright © 2007-2008 Bruce Frederiksen
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+
+
+# Since all other relationships depend on child_parent and sibling
+# relationships, we're just going to go ahead and assert all child_parent and
+# sibling relationships with forward-chaining rules.  If we use
+# backward-chaining rules for these, we would have to re-run the rules each
+# time the facts are needed for the same people.  This avoids that.
+#
+# Establish disease_of relationships:
+
+disease_of_3sym
+    foreach
+	knowledge.disease_of_3sym($disease, $sym1, $sym2, $sym3)
+    assert
+	knowledge.disease_sym_number($disease, 3)
+	knowledge.disease_symptom($disease, $sym1, symptom, disease)
+	knowledge.disease_symptom($disease, $sym2, symptom, disease)
+	knowledge.disease_symptom($disease, $sym3, symptom, disease)
+	
+disease_of_5sym
+    foreach
+	knowledge.disease_of_5sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5)
+    assert
+	knowledge.disease_sym_number($disease, 5)
+	knowledge.disease_symptom($disease, $sym1, symptom, disease)
+	knowledge.disease_symptom($disease, $sym2, symptom, disease)
+	knowledge.disease_symptom($disease, $sym3, symptom, disease)
+	knowledge.disease_symptom($disease, $sym4, symptom, disease)
+	knowledge.disease_symptom($disease, $sym5, symptom, disease)
+	
+disease_of_6sym
+    foreach
+	knowledge.disease_of_6sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6)
+    assert
+	knowledge.disease_sym_number($disease, 6)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+
+disease_of_7sym
+    foreach
+	knowledge.disease_of_7sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6, $sym7)
+    assert
+	knowledge.disease_sym_number($disease, 7)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+	knowledge.disease_symptom($disease,$sym7,symptom,disease)
+	
+disease_of_8sym
+    foreach
+	knowledge.disease_of_8sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6, $sym7, $sym8)
+    assert
+	knowledge.disease_sym_number($disease, 8)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+	knowledge.disease_symptom($disease,$sym7,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	
+disease_of_9sym
+    foreach
+	knowledge.disease_of_9sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6, $sym7, $sym8, $sym9)
+    assert
+	knowledge.disease_sym_number($disease, 9)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+	knowledge.disease_symptom($disease,$sym7,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym8,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	
+disease_of_10sym
+    foreach
+	knowledge.disease_of_10sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6, $sym7, $sym8, $sym9, $sym10)
+    assert
+	knowledge.disease_sym_number($disease, 10)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+	knowledge.disease_symptom($disease,$sym7,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym8,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	knowledge.disease_symptom($disease,$sym10,symptom,disease)
+	knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	
+disease_of_11sym
+    foreach
+	knowledge.disease_of_11sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6, $sym7, $sym8, $sym9, $sym10 ,$sym11)
+    assert
+	knowledge.disease_sym_number($disease, 11)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+	knowledge.disease_symptom($disease,$sym7,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym8,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	knowledge.disease_symptom($disease,$sym10,symptom,disease)
+	knowledge.disease_symptom($disease,$sym11,symptom,disease)
+	knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	
+disease_of_13sym
+    foreach
+	knowledge.disease_of_13sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6, $sym7, $sym8, $sym9, $sym10 ,$sym11 ,$sym12, $sym13)
+    assert
+	knowledge.disease_sym_number($disease, 13)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+	knowledge.disease_symptom($disease,$sym7,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym8,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	knowledge.disease_symptom($disease,$sym10,symptom,disease)
+	knowledge.disease_symptom($disease,$sym11,symptom,disease)
+	knowledge.disease_symptom($disease,$sym12,symptom,disease)
+	knowledge.disease_symptom($disease,$sym13,symptom,disease)
+	knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	
+disease_of_14sym
+    foreach
+	knowledge.disease_of_14sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6, $sym7, $sym8, $sym9, $sym10 ,$sym11 ,$sym12, $sym13, $sym14)
+    assert
+	knowledge.disease_sym_number($disease, 14)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+	knowledge.disease_symptom($disease,$sym7,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym8,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	knowledge.disease_symptom($disease,$sym10,symptom,disease)
+	knowledge.disease_symptom($disease,$sym11,symptom,disease)
+	knowledge.disease_symptom($disease,$sym12,symptom,disease)
+	knowledge.disease_symptom($disease,$sym13,symptom,disease)
+	knowledge.disease_symptom($disease,$sym14,symptom,disease)
+	knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	
+disease_of_15sym
+    foreach
+	knowledge.disease_of_15sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6, $sym7, $sym8, $sym9, $sym10 ,$sym11 ,$sym12, $sym13, $sym14, $sym15)
+    assert
+	knowledge.disease_sym_number($disease, 15)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+	knowledge.disease_symptom($disease,$sym7,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym8,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	knowledge.disease_symptom($disease,$sym10,symptom,disease)
+	knowledge.disease_symptom($disease,$sym11,symptom,disease)
+	knowledge.disease_symptom($disease,$sym12,symptom,disease)
+	knowledge.disease_symptom($disease,$sym13,symptom,disease)
+	knowledge.disease_symptom($disease,$sym14,symptom,disease)
+	knowledge.disease_symptom($disease,$sym15,symptom,disease)
+	knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	
+disease_of_16sym
+    foreach
+	knowledge.disease_of_16sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6, $sym7, $sym8, $sym9, $sym10 ,$sym11 ,$sym12, $sym13, $sym14, $sym15, $sym16)
+    assert
+	knowledge.disease_sym_number($disease, 16)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+	knowledge.disease_symptom($disease,$sym7,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym8,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	knowledge.disease_symptom($disease,$sym10,symptom,disease)
+	knowledge.disease_symptom($disease,$sym11,symptom,disease)
+	knowledge.disease_symptom($disease,$sym12,symptom,disease)
+	knowledge.disease_symptom($disease,$sym13,symptom,disease)
+	knowledge.disease_symptom($disease,$sym14,symptom,disease)
+	knowledge.disease_symptom($disease,$sym15,symptom,disease)
+	knowledge.disease_symptom($disease,$sym16,symptom,disease)
+	knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	
+disease_of_18sym
+    foreach
+	knowledge.disease_of_18sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6, $sym7, $sym8, $sym9, $sym10 ,$sym11 ,$sym12, $sym13, $sym14, $sym15, $sym16, $sym17, $sym18)
+    assert
+	knowledge.disease_sym_number($disease, 18)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+	knowledge.disease_symptom($disease,$sym7,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym8,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	knowledge.disease_symptom($disease,$sym10,symptom,disease)
+	knowledge.disease_symptom($disease,$sym11,symptom,disease)
+	knowledge.disease_symptom($disease,$sym12,symptom,disease)
+	knowledge.disease_symptom($disease,$sym13,symptom,disease)
+	knowledge.disease_symptom($disease,$sym14,symptom,disease)
+	knowledge.disease_symptom($disease,$sym15,symptom,disease)
+	knowledge.disease_symptom($disease,$sym16,symptom,disease)
+	knowledge.disease_symptom($disease,$sym17,symptom,disease)
+	knowledge.disease_symptom($disease,$sym18,symptom,disease)
+	knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	
+disease_of_19sym
+    foreach
+	knowledge.disease_of_19sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6, $sym7, $sym8, $sym9, $sym10 ,$sym11 ,$sym12, $sym13, $sym14, $sym15, $sym16, $sym17, $sym18, $sym19)
+    assert
+	knowledge.disease_sym_number($disease, 19)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+	knowledge.disease_symptom($disease,$sym7,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym8,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym9,symptom,disease)
+	knowledge.disease_symptom($disease,$sym10,symptom,disease)
+	knowledge.disease_symptom($disease,$sym11,symptom,disease)
+	knowledge.disease_symptom($disease,$sym12,symptom,disease)
+	knowledge.disease_symptom($disease,$sym13,symptom,disease)
+	knowledge.disease_symptom($disease,$sym14,symptom,disease)
+	knowledge.disease_symptom($disease,$sym15,symptom,disease)
+	knowledge.disease_symptom($disease,$sym16,symptom,disease)
+	knowledge.disease_symptom($disease,$sym17,symptom,disease)
+	knowledge.disease_symptom($disease,$sym18,symptom,disease)
+	knowledge.disease_symptom($disease,$sym19,symptom,disease)
+	knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	knowledge.disease_symptom($disease,$sym9,symptom,disease)
+
+disease_of_21sym
+    foreach
+	knowledge.disease_of_21sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6, $sym7, $sym8, $sym9, $sym10, $sym11, $sym12, $sym13, $sym14, $sym15, $sym16, $sym17, $sym18, $sym19, $sym20, $sym21)
+    assert
+	knowledge.disease_sym_number($disease, 21)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+	knowledge.disease_symptom($disease,$sym7,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	knowledge.disease_symptom($disease,$sym9,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym10,symptom,disease)
+	knowledge.disease_symptom($disease,$sym11,symptom,disease)
+	knowledge.disease_symptom($disease,$sym12,symptom,disease)
+	knowledge.disease_symptom($disease,$sym13,symptom,disease)
+	knowledge.disease_symptom($disease,$sym14,symptom,disease)
+	knowledge.disease_symptom($disease,$sym15,symptom,disease)
+	knowledge.disease_symptom($disease,$sym16,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym17,symptom,disease)
+	knowledge.disease_symptom($disease,$sym18,symptom,disease)
+	knowledge.disease_symptom($disease,$sym19,symptom,disease)
+	knowledge.disease_symptom($disease,$sym20,symptom,disease)
+	knowledge.disease_symptom($disease,$sym21,symptom,disease)
+	knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	
+disease_of_27sym
+    foreach
+	knowledge.disease_of_27sym($disease, $sym1, $sym2, $sym3, $sym4, $sym5, $sym6, $sym7, $sym8, $sym9, $sym10, $sym11, $sym12, $sym13, $sym14, $sym15, $sym16, $sym17, $sym18, $sym19, $sym20, $sym21, $sym22, $sym23, $sym24, $sym25, $sym26, $sym27)
+    assert
+	knowledge.disease_sym_number($disease, 27)
+	knowledge.disease_symptom($disease,$sym1,symptom,disease)
+	knowledge.disease_symptom($disease,$sym2,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym3,symptom,disease)
+	knowledge.disease_symptom($disease,$sym4,symptom,disease)
+	knowledge.disease_symptom($disease,$sym5,symptom,disease)
+	knowledge.disease_symptom($disease,$sym6,symptom,disease)
+	knowledge.disease_symptom($disease,$sym7,symptom,disease)
+    #knowledge.disease_symptom($disease,$sym8,symptom,disease)
+	knowledge.disease_symptom($disease,$sym9,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym10,symptom,disease)
+	knowledge.disease_symptom($disease,$sym11,symptom,disease)
+	knowledge.disease_symptom($disease,$sym12,symptom,disease)
+	knowledge.disease_symptom($disease,$sym13,symptom,disease)
+	knowledge.disease_symptom($disease,$sym14,symptom,disease)
+	knowledge.disease_symptom($disease,$sym15,symptom,disease)
+	knowledge.disease_symptom($disease,$sym16,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym17,symptom,disease)
+	knowledge.disease_symptom($disease,$sym18,symptom,disease)
+	knowledge.disease_symptom($disease,$sym19,symptom,disease)
+	knowledge.disease_symptom($disease,$sym20,symptom,disease)
+	knowledge.disease_symptom($disease,$sym21,symptom,disease)
+	knowledge.disease_symptom($disease,$sym22,symptom,disease)
+	knowledge.disease_symptom($disease,$sym23,symptom,disease) 
+	knowledge.disease_symptom($disease,$sym24,symptom,disease)
+	knowledge.disease_symptom($disease,$sym25,symptom,disease)
+	knowledge.disease_symptom($disease,$sym26,symptom,disease)
+	knowledge.disease_symptom($disease,$sym27,symptom,disease)
+	knowledge.disease_symptom($disease,$sym8,symptom,disease)
+
+how_related_disease_symptom
+    foreach
+	knowledge.disease_symptom($disease, $symptom, $s, $d)
+	$relationship =add_prefix($s,$d)
+    assert
+        knowledge.how_related($disease, $symptom, $relationship)
+		
+fc_extras		
+		
+		 def add_prefix(x,y):return ("(" + x +"," + y +")")
+	
